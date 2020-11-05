@@ -1,0 +1,510 @@
+:root{
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header{
+    width: 100%;
+    min-width: 320px;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    height: 310px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.header__logo img{
+    margin-top: 40px;
+}
+.header__tittle{
+    width: 90%;
+    min-width: 280px;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.header__tittle h1{
+    font-size: 2.4rem;
+    color: var(--just-white);
+    font-weight: bold;
+}
+.header__tittle p{
+    font-size: 1.4rem;
+    color: var(--soft-orange);
+    font-weight: 300;
+    margin-top: 20px;
+}
+.header__button{
+    font-size: 1.4rem;
+    width: 70%;
+    min-width: 200px;
+    max-width: 350px;
+    height: 45px;
+    font-weight: bold;
+    background: var(--just-white);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--warm-black);
+    padding: 10px 0;
+    box-shadow: 7px 7px 8px 1px rgba(0,0,0,0.26);
+    position: absolute;
+    top: calc(100% - 25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.header__button span{
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/Vector-bottom.svg');
+    background-repeat: no-repeat;
+}
+main{
+    background: var(--off-white);
+}
+.benefits{
+    width: 100%;
+    display: flex;
+    height: auto;
+    min-width: 320px;
+    max-width: 1400px;
+    background: var(--off-white);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+.benefits img{
+    width: 60%;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.benefits__tittle{
+    width: 90%;
+    max-width: 900px;
+    min-width: 280px;
+    margin-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.benefits__tittle h2{
+    font-size: 2.2rem;
+    margin-top: 40px;
+    font-weight: bold;
+    line-height: 2.6rem;
+}
+.benefits__tittle p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 25px;
+    color: #757575;
+    line-height: 2.3rem; 
+}
+.scrollx{
+    display: flex;
+    width: 100%;
+    min-width: 250px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin-bottom: 60px;
+}
+.table-benefits{
+    width: 90%;
+    max-width: 900px;
+    min-width: 320px;
+    margin-top: 40px;
+    text-align: start;
+    scroll-snap-align: center;
+}
+.table-benefits .table-benefits__h3--price{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--bitcoin-orange);
+    margin-left: calc(50% - 100px);
+}
+.table-benefits .table-benefits__h3--commissions{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-blue);
+    margin-left: calc(50% - 100px);
+}
+.table-container{
+    margin-top: 20px;
+    width: 100%;
+    min-width: 250px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-gap: 2px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.table-container .item{
+    background: var(--just-white);
+    padding: 10px;
+    font-size: 1.4rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+.item.content{
+    font-weight: 500;
+    color: #BABABA;
+}
+.item.price{
+    font-weight: 400;
+    padding-left: 20px;
+    
+}
+.price .lower{
+    width: 15px;
+    height: 10px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/trending-down.svg');
+    background-repeat: no-repeat;
+}
+.price .upper{
+    width: 15px;
+    height: 10px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/trending-up.svg');
+    background-repeat: no-repeat;
+}
+.table-benefits__p{
+    width: 170px;
+    max-width: 250px;
+    padding: 5px;
+    margin-left: calc(50% - 82px);
+    margin-top: 15px;
+    text-align: center;
+}
+.table-benefits__p.price{
+    background: var(--soft-orange);
+    border-radius: 5px;
+}
+.table-benefits__p.commissions{
+    background: var(--soft-blue);
+    border-radius: 5px;
+}
+.benefits__logo{
+    width: 45px;
+    height: 30px;
+    background-image: url('../assets/icons/logo-solo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: calc(100% - 15px);
+}
+.features{
+    width: 100%;
+    min-width: 320px;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+    background: var(--warm-black);
+}
+.features-tittle{
+    width: 90%;
+    min-width: 280px;
+    max-width: 900px;
+    padding-top: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.features-tittle h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+.features-tittle p{
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: var(--grey);
+}
+.features-cards{
+    width: 90%;
+    min-width: 280px;
+    max-width: 900px;
+    padding: 40px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, minmax(120px, 1fr));
+    grid-gap: 10px;
+}
+.features-cards .item{
+    width: 100%;
+    background: #282623;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.features-cards .item h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--off-white);
+    line-height: 3rem;
+}
+.features-cards .item p{
+    font-size: 1.4rem;
+    color: var(--grey);
+    line-height: 2rem;
+    margin-top: 10px;
+}
+.symbol{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+.symbol.time{
+    background-image: url('../assets/icons/clock-circle.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.symbol.eye{
+    background-image: url('../assets/icons/eye-sign.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.symbol.dollar{
+    background-image: url('../assets/icons/dollar-sign.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.symbol.check{
+    background-image: url('../assets/icons/check-circle.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section__background{
+    width: 100%;
+    min-width: 320px;
+    max-width: 1400px;
+    height: 380px;
+    background-image: url('../assets/imgs/batatbit-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.section__background h2{
+    font-size: 2.2rem;
+    width: 90%;
+    min-width: 280px;
+    max-width: 900px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--just-white);
+    padding-top: 60px;
+}
+.plans{
+    width: 100%;
+    max-width: 1400px;
+    min-width: 320px;
+    height: auto;
+    background: var(--off-white);
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.plans-tittle{
+    width: 90%;
+    max-width: 900px;
+    min-width: 280px;
+    padding: 50px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.plans-tittle h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: var(--warm-black);
+}
+.plans-tittle p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #757575;
+    margin-top: 20px;
+}
+.plans-card{
+    display: flex;
+    width: 100%;
+    min-width: 280px;
+    max-width: 900px;
+    text-align: center;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 0 auto;
+}
+.plans-card .container-item{
+    width: 100%;
+    min-width: 230px;
+    scroll-snap-align: center;
+}
+.plans-card .item{
+    width: 60%;
+    min-width: 192px;
+    max-width: 200px;
+    margin: 20px auto;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+}
+.plans-card .item.basic{
+    background: var(--secondary-blue);
+}
+.plans-card .item.comend{
+    background: var(--grey);
+}
+.plans-card .item.SU{
+    background: var(--warm-black);
+}
+.plans-card .item.basic .quantity{
+    color: var(--soft-orange);
+}
+.plans-card .item.basic .amount{
+    color: var(--soft-orange);
+}
+.plans-card .item.basic .saving{
+    color: var(--warm-black);
+    font-weight: bold;
+}
+.plans-card .item.comend .saving{
+    color: var(--warm-black);
+}
+.plans-card .item.SU .quantity{
+    color: var(--just-white);
+}
+.plans-card .item.SU .amount{
+    color: var(--just-white);
+}
+.plans-card .item.SU .saving{
+    color: var(--soft-orange);
+    
+}
+
+.plans-card .item .comend{
+    width: 50%;
+    height: 30px;
+    padding: 7px;
+    min-width: 120px;
+    max-width: 180px;
+    margin: 0 auto;
+    background: var(--bitcoin-orange);
+    border-radius: 5px;
+    position: absolute;
+    top: -15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--just-white);
+}
+.plans-card .item .quantity{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.plans-card .item .amount{
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+.plans-card .item .amount span{
+    vertical-align: top;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+    padding-right: 5px;
+}
+.plans-card .item .saving{
+    width: 80%;
+    max-width: 280px;
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+.plans-card .item .plans__button{
+    font-family: 'inter', sans-serif;
+    font-weight: bold;
+    margin: 20px 0;
+    width: 70%;
+    height: 45px;
+    border: 2px solid var(--bitcoin-orange);
+    background: var(--just-white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.plans-card .item .plans__button span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/arrow-right-orange.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background: var(--bitcoin-orange);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+footer .footer__list{
+    width: 50%;
+    max-width: 600px;
+    font-size: 1.4rem;
+}
+footer .footer__list li{
+    list-style: none;
+    font-weight: 500;
+}
+footer .footer__list a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+footer figure{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    max-width: 600px;
+}
+@media screen and (min-width: 769px){
+    .features-cards{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, minmax(120px, 1fr));
+    }
+    .section__background h2{
+        font-size: 3rem;
+    }
+}
